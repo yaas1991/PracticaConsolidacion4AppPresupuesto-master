@@ -1,0 +1,36 @@
+.losTitulos{
+    color:#146C94;
+    text-align: center;
+}
+
+.fondoPresupuesto{
+    background-color: #F6F1F1;
+    border: 5px solid #19A7CE;
+    border-radius: 12px;
+    margin-bottom:2%;
+}
+
+.fondoGasto{
+    background-color: #AFD3E2;
+    border: 5px solid #146C94;
+    border-radius: 12px;
+    margin-top: 2%;
+}
+
+.fondoRegistro1{
+    background-color: #9DB2BF;
+    border: 5px solid #27374D;
+    border-radius: 12px;
+    margin-bottom:2%;
+}
+
+.fondoRegistro2{
+    background-color: #DDE6ED;
+    border: 5px solid #526D82;
+    border-radius: 12px;
+    margin-top:2%;
+}
+
+img{
+    max-width: 18px;
+}

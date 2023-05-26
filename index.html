@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body onload="asignarEventos()">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 losTitulos">
+          <h1>Presupuesto APP</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 fondoPresupuesto">
+                      <form>
+                        <div class="mb-3">
+                          <label for="txtPresupuesto" class="form-label"
+                            >Ingresa tu presupuesto:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtPresupuesto"
+                            aria-describedby="presupuestoHelp"
+                          />
+                          <div id="presupuestoHelp" class="form-text">
+                            Ingresa un presupuesto que no sea un número negativo
+                          </div>
+                        </div>
+
+                        <button
+                          id="btnCalcular"
+                          type="button"
+                          class="btn btn-outline-dark"
+                        >
+                          Calcular
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 fondoGasto">
+                      <form>
+                        <div class="mb-3">
+                          <label for="txtNombreGasto" class="form-label"
+                            >Ingresa el Nombre del Gasto:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtNombreGasto"
+                            aria-describedby="nombreGastoHelp"
+                          />
+                          <div id="nombreGastoHelp" class="form-text">
+                            Ingresa un nombre del gasto
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="txtCantidadGasto" class="form-label"
+                            >Ingresa la cantidad del Gasto:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="txtCantidadGasto"
+                            aria-describedby="cantidadGastoHelp"
+                          />
+                          <div id="cantidadGastoHelp" class="form-text">
+                            Ingresa una cantidad de gasto que no sea un número
+                            negativo
+                          </div>
+                        </div>
+
+                        <button
+                          id="btnAnadirGasto"
+                          type="button"
+                          class="btn btn-outline-dark"
+                        >
+                          Añadir Gasto
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 fondoRegistro1">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <p>Presupuesto</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p>Gastos</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p>Saldo</p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <p id="parrafoPresupuesto">0</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p id="parrafoGasto">$0</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p id="parrafoSaldo">$0</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 fondoRegistro2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Gasto</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p>Valor</p>
+                          </div>
+
+                          <div class="col-md-2">
+                            <p>Acción</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p id="parrafoNombreGasto"></p>
+                          </div>
+                          <div class="col-md-4">
+                            <p id="parrafoValor"></p>
+                          </div>
+                          <div class="col-md-2">
+                            <p id="parrafoAccion"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/bootstrap/css/bootstrap.min.css"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
